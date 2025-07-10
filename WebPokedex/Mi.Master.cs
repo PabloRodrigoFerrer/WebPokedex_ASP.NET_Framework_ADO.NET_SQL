@@ -12,6 +12,19 @@ namespace WebPokedex
     {
         public bool usuarioActivo = UserManager.CurrentUser != null ? true : false;
 
+        public event EventHandler BuscarYFiltrar;
+
+        public string TextoBuscado
+        {
+            get { return txtBuscarProducto.Text; }
+        }
+
+
+        public  UpdatePanel PanelNavCarrito 
+        { 
+            get { return upNavbarCarrito; }
+        }
+
         public void Page_Load(object sender, EventArgs e)
         {
             if(!usuarioActivo && !(Page is Loging || Page is Default || Page is Registrarse))
@@ -25,6 +38,7 @@ namespace WebPokedex
         {
             if (UserManager.CurrentUser != null)
             {
+                Session.Remove("carrito");
                 Session.Remove("listaFavoritos");
                 Session.Remove("user");
                 Response.Redirect("Login.aspx");
@@ -43,6 +57,15 @@ namespace WebPokedex
                 imgAvatar.ImageUrl = "https://w7.pngwing.com/pngs/1000/665/png-transparent-computer-icons-profile-s-free-angle-sphere-profile-cliparts-free.png";
             }
         }
+
+        protected void txtBuscarProducto_TextChanged(object sender, EventArgs e)
+        {
+            if(BuscarYFiltrar != null)
+            {
+                BuscarYFiltrar(this, EventArgs.Empty);
+            }
+        }
+
 
     }
 }

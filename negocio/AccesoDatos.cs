@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace negocio
 {
@@ -27,7 +28,7 @@ namespace negocio
         {
             comando.CommandType = System.Data.CommandType.StoredProcedure;
             comando.CommandText = sp;
-
+            
         }
         
         public void setearConsulta(string consulta)
@@ -64,6 +65,31 @@ namespace negocio
             }
         }
 
+        public void ejecutarAccion(bool mantenerConexion = false)
+        {
+            comando.Connection = conexion;
+            try
+            {
+                if (conexion.State != ConnectionState.Open) 
+                {
+                    conexion.Open();
+                }
+                comando.ExecuteNonQuery();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                if (!mantenerConexion)
+                    conexion.Close();
+            }
+
+        }
+
         public int ejecutarScalar()
         {
             comando.Connection = conexion;
@@ -76,11 +102,20 @@ namespace negocio
             {
                 throw ex;
             }
+            finally
+            {
+                conexion.Close();
+            }
         }
 
         public void setearParametro(string nombre, object valor)
         {
             comando.Parameters.AddWithValue(nombre, valor);
+        }
+
+        public void limpiarParemetro()
+        {
+            comando.Parameters.Clear();
         }
 
         public void cerrarConexion()

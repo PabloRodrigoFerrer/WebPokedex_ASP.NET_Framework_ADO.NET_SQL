@@ -67,8 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Carrito.aspx" />
     <Content Include="Contacto.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="GenerarRemito.aspx" />
+    <Content Include="Pedidos.aspx" />
+    <Content Include="DetalleProducto.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="Favoritos.aspx" />
     <Content Include="frmAltaPokemon.aspx" />
@@ -76,12 +80,22 @@
     <Content Include="listaPokemons.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MiPerfil.aspx" />
+    <Content Include="PedidoEnviado.aspx" />
+    <Content Include="PedidosDetalle.aspx" />
     <Content Include="Registrarse.aspx" />
+    <Content Include="RemitoEnviado.aspx" />
     <Content Include="SoloAdmin.aspx" />
     <Content Include="UpdatePanelDdl.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Carrito.aspx.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Carrito.aspx.designer.cs">
+      <DependentUpon>Carrito.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contacto.aspx.cs">
       <DependentUpon>Contacto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,6 +109,27 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarRemito.aspx.cs">
+      <DependentUpon>GenerarRemito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenerarRemito.aspx.designer.cs">
+      <DependentUpon>GenerarRemito.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos.aspx.cs">
+      <DependentUpon>Pedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pedidos.aspx.designer.cs">
+      <DependentUpon>Pedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleProducto.aspx.cs">
+      <DependentUpon>DetalleProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleProducto.aspx.designer.cs">
+      <DependentUpon>DetalleProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
@@ -120,6 +155,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CarritoHelper.cs" />
     <Compile Include="listaPokemons.aspx.cs">
       <DependentUpon>listaPokemons.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -148,6 +184,20 @@
     <Compile Include="MiPerfil.aspx.designer.cs">
       <DependentUpon>MiPerfil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PedidoEnviado.aspx.cs">
+      <DependentUpon>PedidoEnviado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PedidoEnviado.aspx.designer.cs">
+      <DependentUpon>PedidoEnviado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PedidosDetalle.aspx.cs">
+      <DependentUpon>PedidosDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PedidosDetalle.aspx.designer.cs">
+      <DependentUpon>PedidosDetalle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registrarse.aspx.cs">
       <DependentUpon>Registrarse.aspx</DependentUpon>
@@ -155,6 +205,13 @@
     </Compile>
     <Compile Include="Registrarse.aspx.designer.cs">
       <DependentUpon>Registrarse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemitoEnviado.aspx.cs">
+      <DependentUpon>RemitoEnviado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemitoEnviado.aspx.designer.cs">
+      <DependentUpon>RemitoEnviado.aspx</DependentUpon>
     </Compile>
     <Compile Include="SoloAdmin.aspx.cs">
       <DependentUpon>SoloAdmin.aspx</DependentUpon>

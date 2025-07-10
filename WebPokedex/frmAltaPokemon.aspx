@@ -40,7 +40,7 @@
             </div>
         </div>    
         <div class="col-6">
-            <asp:ScriptManager runat="server" />
+            
             <asp:UpdatePanel runat="server">
                 <ContentTemplate>
 

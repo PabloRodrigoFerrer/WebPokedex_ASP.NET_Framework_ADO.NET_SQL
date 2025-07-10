@@ -11,52 +11,34 @@ namespace WebPokedex
 {
 
 
-    public partial class Default
+    public partial class GenerarRemito
     {
 
         /// <summary>
-        /// Control btnFiltrarAgua.
+        /// Control lblCarritoRemito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFiltrarAgua;
+        protected global::System.Web.UI.WebControls.Label lblCarritoRemito;
 
         /// <summary>
-        /// Control btnFiltrarFuego.
+        /// Control dgvGenerarRemito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFiltrarFuego;
+        protected global::System.Web.UI.WebControls.GridView dgvGenerarRemito;
 
         /// <summary>
-        /// Control btnFiltrarPlanta.
+        /// Control btnEnviarRemito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFiltrarPlanta;
-
-        /// <summary>
-        /// Control btnFiltrarTodos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFiltrarTodos;
-
-        /// <summary>
-        /// Control repCards.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repCards;
+        protected global::System.Web.UI.WebControls.Button btnEnviarRemito;
     }
 }

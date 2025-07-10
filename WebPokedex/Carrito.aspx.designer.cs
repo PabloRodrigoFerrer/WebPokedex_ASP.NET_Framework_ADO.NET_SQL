@@ -11,52 +11,43 @@ namespace WebPokedex
 {
 
 
-    public partial class Default
+    public partial class Carrito
     {
 
         /// <summary>
-        /// Control btnFiltrarAgua.
+        /// Control lblTotal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFiltrarAgua;
+        protected global::System.Web.UI.WebControls.Label lblTotal;
 
         /// <summary>
-        /// Control btnFiltrarFuego.
+        /// Control dgvCarrito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFiltrarFuego;
+        protected global::System.Web.UI.WebControls.GridView dgvCarrito;
 
         /// <summary>
-        /// Control btnFiltrarPlanta.
+        /// Control btnPedir.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFiltrarPlanta;
+        protected global::System.Web.UI.WebControls.Button btnPedir;
 
         /// <summary>
-        /// Control btnFiltrarTodos.
+        /// Control btnBorrarCarrito.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnFiltrarTodos;
-
-        /// <summary>
-        /// Control repCards.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repCards;
+        protected global::System.Web.UI.WebControls.LinkButton btnBorrarCarrito;
     }
 }

@@ -21,5 +21,11 @@ namespace dominio
 
         public bool Activo { get; set; }
 
+
+        public int Cantidad { get; set; }
+
+        public decimal PrecioUnitario { get; set; }
+
+       
     }
 }

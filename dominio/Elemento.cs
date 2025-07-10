@@ -8,8 +8,18 @@ namespace dominio
 {
     public class Elemento
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Descripcion { get; set; }
+
+
+        public Elemento() 
+        {
+                
+        }
+        public Elemento(string descripcion)
+        {
+            Descripcion = descripcion;
+        }
 
         public override string ToString()
         {

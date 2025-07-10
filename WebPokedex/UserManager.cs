@@ -30,5 +30,10 @@ namespace WebPokedex
             get { return CurrentUser.urlImagen != "" ? true : false;}
         }
 
+        public static bool tieneDireccion
+        {
+            get { return CurrentUser.Apellido != null ? true : false; }
+        }
+
     }
 }

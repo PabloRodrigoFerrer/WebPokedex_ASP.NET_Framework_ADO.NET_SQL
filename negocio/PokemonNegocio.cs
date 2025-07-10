@@ -90,6 +90,8 @@ namespace negocio
                     aux.Debilidad.Id = (int)datos.Lector["IdDebilidad"];
                     aux.Debilidad.Descripcion = (string)datos.Lector["Debilidad"];
                     aux.Activo = (bool)datos.Lector["Activo"];
+                    aux.PrecioUnitario = (decimal)datos.Lector["Precio"];
+                    aux.Cantidad = (int)datos.Lector["Cantidad"];
                    
 
                     lista.Add(aux);
